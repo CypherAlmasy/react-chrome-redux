@@ -98,7 +98,7 @@ class Store {
           type: DISPATCH_TYPE,
           portName: this.portName,
           payload: data
-        }, (resp) => {
+        }, {}, (resp) => {
           const {error, value} = resp;
 
           if (error) {
